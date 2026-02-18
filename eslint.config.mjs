@@ -30,13 +30,7 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'warn',
       'prettier/prettier': ['error', { endOfLine: 'auto', semi: false }],
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
     },
   },
 )
